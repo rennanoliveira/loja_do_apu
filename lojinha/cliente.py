@@ -8,6 +8,3 @@ class Cliente:
         self.email = email
         self.telefone = telefone
         self.senha = senha
-    #
-    # def area(self):
-    #     return self.x * self.y
