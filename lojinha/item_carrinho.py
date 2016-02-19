@@ -4,8 +4,8 @@ class ItemCarrinho:
         self.produto = produto
         self.quantidade = qtd
 
-    def adicionar(self):
-        self.quantidade += 1
+    def get_produto(self):
+    	return self.produto.get_nome()
 
-    def subtrair(self):
-        self.quantidade -= 1
+    def get_quantidade(self):
+    	return self.quantidade
