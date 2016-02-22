@@ -8,12 +8,11 @@ class Cliente:
 	def get_nome(self):
 		return self.nome
 
-	def meu_carrinho(self):
-		return self.carrinho.imprime_produtos()
+	def get_carrinho(self):
+		return self.carrinho
 
-	def solicitar_produto(self, produto, qtd):
-		self.carrinho.adicionar_produto(produto, qtd)
-		return "Produto adicionado: " + produto.get_nome()
+	def meu_carrinho(self):
+		return "Carrinho de %s: %s" % (self.get_nome(), self.carrinho.imprime_produtos())
 
 	def limpar_carrinho(self):
 		self.carrinho.limpar_carrinho()
