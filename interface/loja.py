@@ -40,11 +40,6 @@ class Loja:
 		produto_em_estoque = next(x for x in self.produtos if x.get_nome() == produto.get_nome())
 		produto_em_estoque.remover_estoque(quantidade)
 
-	def remover_do_carrinho(self, cliente, nome_produto):
-		carrinho = cliente.get_carrinho()
-		carrinho.remover_produto(nome_produto)
-		return "Produto removido: %s" % nome_produto
-
 
 		
 

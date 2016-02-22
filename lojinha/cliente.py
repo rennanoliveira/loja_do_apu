@@ -28,9 +28,7 @@ class Cliente:
 			resultado.append(str(pedido.imprimir_pedido()))
 		return "Pedidos de %s: %s" % (self.nome, str(resultado))
 
-	# def meus_pedidos(self):
-		# ""
-		# resultado = []
-		# for pedido in self.pedidos:
-			# resultado.append(str(pedido.imprimir_pedido())
-		# return "Pedidos de %s: %s" % (self.nome(), resultado)
+
+	def remover_do_carrinho(self, nome_produto):
+		self.carrinho.remover_produto(nome_produto)
+		return "Produto removido: %s" % nome_produto

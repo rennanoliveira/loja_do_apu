@@ -76,7 +76,7 @@ print loja.imprime_produtos()
 
 # Homer remove produto em falta
 print "\n======== CLIENTE HOMER REMOVE CHUPETA DE SEU CARRINHO ========"
-print loja.remover_do_carrinho(homer, "Chupeta")
+print homer.remover_do_carrinho("Chupeta")
 
 # Homer fecha pedido
 print "\n======== CLIENTE HOMER FECHA SEU PEDIDO ========"
