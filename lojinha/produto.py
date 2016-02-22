@@ -12,5 +12,9 @@ class Produto:
     	for _ in range(qtd):
     	  self.produtos_estoques.append(ProdutoEstoque(self))
 
+    def remover_estoque(self, qtd):
+        for _ in range(qtd):
+            self.produtos_estoques.pop(0)
+
     def get_quantidade(self):
     	return len(self.produtos_estoques) 

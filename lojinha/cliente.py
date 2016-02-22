@@ -4,6 +4,7 @@ class Cliente:
 	def __init__(self, nome):
 		self.nome = nome
 		self.carrinho = Carrinho()
+		self.pedidos = []
 
 	def get_nome(self):
 		return self.nome
@@ -17,3 +18,19 @@ class Cliente:
 	def limpar_carrinho(self):
 		self.carrinho.limpar_carrinho()
 		return 'Produtos removidos'
+
+	def adicionar_pedido(self, pedido):
+		self.pedidos.append(pedido)
+
+	def meus_pedidos(self):
+		resultado = []
+		for pedido in self.pedidos:
+			resultado.append(str(pedido.imprimir_pedido()))
+		return "Pedidos de %s: %s" % (self.nome, str(resultado))
+
+	# def meus_pedidos(self):
+		# ""
+		# resultado = []
+		# for pedido in self.pedidos:
+			# resultado.append(str(pedido.imprimir_pedido())
+		# return "Pedidos de %s: %s" % (self.nome(), resultado)
