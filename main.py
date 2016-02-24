@@ -87,3 +87,22 @@ print homer.meus_pedidos()
 print "\n======== PRODUTOS DISPONIVEIS NA LOJA ========"
 print loja.imprime_produtos()
 
+# Andamento do pedido
+print "\n========= ANDAMENTO DO PEDIDO ========"
+pedido = homer.get_pedidos()[0]
+print pedido.status_atual()
+
+pedido.pagamento_recebido()
+print pedido.status_atual()
+
+pedido.enviado_pelos_correios()
+print pedido.status_atual()
+
+pedido.finalizar()
+print pedido.status_atual()
+
+print "\nFIM :D"
+
+
+
+

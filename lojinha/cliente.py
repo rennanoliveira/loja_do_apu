@@ -28,6 +28,8 @@ class Cliente:
 			resultado.append(str(pedido.imprimir_pedido()))
 		return "Pedidos de %s: %s" % (self.nome, str(resultado))
 
+	def get_pedidos(self):
+		return self.pedidos
 
 	def remover_do_carrinho(self, nome_produto):
 		self.carrinho.remover_produto(nome_produto)
