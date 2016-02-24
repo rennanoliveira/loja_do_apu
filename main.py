@@ -1,5 +1,5 @@
 from interface import Loja
-from lojinha import Carrinho, Cliente, Produto
+from lojinha import Cliente
 
 # Inicializa a loja, um objeto para substituir a interface do usuario
 # loja possui lista de produtos, como nao temos BD para ter de onde buscar os produtos
